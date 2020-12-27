@@ -1,0 +1,154 @@
+body {
+  background-image: url("../Images/Black-Chat-Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0804ff;
+  font-size: x-large;
+  padding: 6px;
+  letter-spacing: 6px;
+  border: 1px solid;
+}
+
+.loading > div {
+  padding: 18px;
+}
+
+.loading > span {
+  margin-left: 20px;
+}
+
+#chatmessages {
+  /* overflow: auto; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 90%;
+  padding: 10px;
+}
+
+#send,
+#recieve {
+  color: #fff;
+  border-radius: 0 3rem 3rem 2rem;
+}
+
+#send {
+  border: 2px solid #00dcff;
+  border-radius: 1rem 2rem 2rem 0;
+  float: right;
+  background: rgba(0, 220, 255, 0.7);
+}
+
+#recieve {
+  border: 2px solid #fff;
+  float: left;
+  background: rgb(67, 95, 122, 0.89);
+}
+
+.alias {
+  margin: 0.5rem;
+  background: black;
+  border-radius: 1rem;
+  color: aliceblue;
+  height: 2rem;
+  width: 2rem;
+  box-shadow: 0px 0 11px 0px black;
+  padding: 3px;
+}
+
+.msgLoad {
+  height: 100%;
+  float: left;
+  position: absolute;
+  background: rgba(172, 195, 197, 0.5);
+  z-index: 1;
+}
+
+.percent {
+  /* background-image: url("./Images/297.gif"); */
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.activeUser {
+  width: 3rem;
+  height: 3rem;
+  background: aliceblue;
+  text-align: center;
+}
+
+#text {
+  z-index: 0;
+  resize: none;
+  height: 2.8rem;
+  padding: 0.6rem 0.2rem;
+  font-size: 15px;
+}
+
+#text:focus {
+  outline: none;
+}
+
+.smiley {
+  background-image: url("../Images/smiley.JPG");
+  width: inherit;
+  height: inherit;
+  background-repeat: round;
+  position: absolute;
+  z-index: 1;
+  /* top: 1px; */
+  left: 1px;
+}
+
+.box {
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  bottom: 3rem;
+  background: #ffffffed;
+  overflow-x: hidden;
+}
+
+.emoji-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.emoji-list li {
+  height: 2.5rem;
+  width: 17.5rem;
+  display: flex;
+  transition: all ease-in;
+}
+
+li span {
+  display: flex;
+  height: inherit;
+  width: 2.9rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding-bottom: 3px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
